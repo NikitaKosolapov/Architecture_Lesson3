@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>975176121037-e5lmtlcvm5i9uqdf0ll3tfu1inrgko5b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.975176121037-e5lmtlcvm5i9uqdf0ll3tfu1inrgko5b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDkT9ABZIdjzLGP_urN23cmdv0NO4gJfKc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>975176121037</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.NikitaKosolapov.KosolapovNikita</string>
+	<key>PROJECT_ID</key>
+	<string>nikitakosolapov</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nikitakosolapov.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:975176121037:ios:c79730a9c5027c17e0c784</string>
+	<key>DATABASE_URL</key>
+	<string>https://nikitakosolapov.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyFriendsTableViewCell" id="lJb-9t-11d" customClass="MyFriendsTableViewCell" customModule="KosolapovNikita" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lJb-9t-11d" id="fbM-xq-Wcn">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7Q-MC-gUE">
+                        <rect key="frame" x="70" y="15" width="339" height="20.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GD-sk-ddU" customClass="CircleImageWithShadowView" customModule="KosolapovNikita" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="50" height="50"/>
+                        <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="hNE-Jg-xyj"/>
+                            <constraint firstAttribute="width" constant="50" id="xuw-Hv-mpK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTh-tY-REx">
+                        <rect key="frame" x="10" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="userImageAnimate" destination="lJb-9t-11d" eventType="touchUpInside" id="Feh-Ko-saJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KTh-tY-REx" firstAttribute="leading" secondItem="1GD-sk-ddU" secondAttribute="leading" id="2o8-p7-yBm"/>
+                    <constraint firstItem="M7Q-MC-gUE" firstAttribute="centerY" secondItem="fbM-xq-Wcn" secondAttribute="centerY" id="Ahg-8M-5ZY"/>
+                    <constraint firstItem="M7Q-MC-gUE" firstAttribute="leading" secondItem="1GD-sk-ddU" secondAttribute="trailing" constant="10" id="DLr-gZ-olm"/>
+                    <constraint firstAttribute="trailing" secondItem="M7Q-MC-gUE" secondAttribute="trailing" constant="5" id="H5k-30-hku"/>
+                    <constraint firstItem="KTh-tY-REx" firstAttribute="top" secondItem="1GD-sk-ddU" secondAttribute="top" id="VzU-c0-Rti"/>
+                    <constraint firstItem="KTh-tY-REx" firstAttribute="bottom" secondItem="1GD-sk-ddU" secondAttribute="bottom" id="X6E-33-90s"/>
+                    <constraint firstItem="KTh-tY-REx" firstAttribute="trailing" secondItem="1GD-sk-ddU" secondAttribute="trailing" id="bzg-3n-qqh"/>
+                    <constraint firstItem="1GD-sk-ddU" firstAttribute="leading" secondItem="fbM-xq-Wcn" secondAttribute="leading" constant="10" id="q1D-7l-9zn"/>
+                    <constraint firstItem="1GD-sk-ddU" firstAttribute="centerY" secondItem="fbM-xq-Wcn" secondAttribute="centerY" id="zfA-1H-kfR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userImageView" destination="1GD-sk-ddU" id="obp-eu-lkn"/>
+                <outlet property="userNameLabel" destination="M7Q-MC-gUE" id="0xN-PX-rJG"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="36"/>
+        </tableViewCell>
+    </objects>
+</document>
